@@ -1,4 +1,4 @@
-# Pipeline ETL Automatizado — Cotação do Dólar
+# Pipeline de Dados Cambiais: Cotação do Dólar
 
 **Stack:** Python, PostgreSQL, SQLAlchemy, Requests, SMTP
 
