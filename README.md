@@ -25,7 +25,7 @@ API do Banco Central  →  Extração  →  Limpeza/Transformação  →  Postgr
 - Com isso, qualquer dia que passar de mais ou menos 1,3% a 1,5% conta como anomalia.
 - No total apareceram 17 dias assim, sendo o maior deles em 28/11/2024 (subiu 2,71% num dia só) e o de maior queda em 06/08/2024 (caiu quase 2%).
 
-## Um perrengue real que tive no meio do caminho
+## Problemas no desenvolvimento do projeto
 
 Comecei configurando o envio de e mail pelo Outlook, mas descobri no meio do processo que a Microsoft parou de aceitar login simples (usuário e senha, mesmo usando senha de aplicativo) pra mandar e mail via código. Eles exigem um sistema mais complexo de autenticação (OAuth2) que ficaria grande demais pra esse projeto. Resolvi trocando o remetente pra uma conta Gmail, mantendo o Outlook só como quem recebe o alerta. Achei importante deixar isso registrado porque foi um problema de verdade que apareceu do nada, e serve de lição: às vezes um serviço externo muda a regra do jogo e você precisa se adaptar no meio do projeto.
 
@@ -88,11 +88,3 @@ Abaixo, um e-mail de alerta real gerado pelo pipeline, listando os dias com vari
 <img width="1132" height="751" alt="Captura de tela 2026-09-07 214358" src="https://github.com/user-attachments/assets/19154a6c-e163-4b0e-86b1-c359f3864a72" />
 
 No total, foram identificados 17 dias com variação anômala no período analisado.
-
-## O que eu ainda quero melhorar
-
-- Fazer isso rodar sozinho de tempos em tempos, em vez de eu precisar executar na mão.
-- Adicionar uma segunda fonte de dados, tipo um CSV local, pra treinar a parte de juntar fontes diferentes.
-- Voltar e resolver o envio pelo Outlook direito, usando OAuth2 dessa vez.
-- Deixar o período de datas configurável, em vez de fixo em 2024.
-- Guardar logs de cada execução na pasta logs, em vez de só mostrar no terminal.
