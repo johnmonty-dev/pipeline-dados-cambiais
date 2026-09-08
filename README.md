@@ -27,7 +27,7 @@ API do Banco Central  →  Extração  →  Limpeza/Transformação  →  Postgr
 
 ## Problemas no desenvolvimento do projeto
 
-Comecei configurando o envio de e mail pelo Outlook, mas descobri no meio do processo que a Microsoft parou de aceitar login simples (usuário e senha, mesmo usando senha de aplicativo) pra mandar e mail via código. Eles exigem um sistema mais complexo de autenticação (OAuth2) que ficaria grande demais pra esse projeto. Resolvi trocando o remetente pra uma conta Gmail, mantendo o Outlook só como quem recebe o alerta. Achei importante deixar isso registrado porque foi um problema de verdade que apareceu do nada, e serve de lição: às vezes um serviço externo muda a regra do jogo e você precisa se adaptar no meio do projeto.
+Comecei configurando o envio de e mail pelo Outlook, mas descobri no meio do processo que a Microsoft parou de aceitar login simples (usuário e senha, mesmo usando senha de aplicativo) pra mandar e mail via código. Eles exigem um sistema mais complexo de autenticação (OAuth2) que ficaria grande demais pra esse projeto. Resolvi trocando o remetente pra uma conta Gmail, mantendo o Outlook só como quem recebe o alerta. 
 
 ## Como o projeto está organizado
 
