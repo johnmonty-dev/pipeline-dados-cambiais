@@ -5,7 +5,7 @@
 
 Esse projeto é um pipeline de ETL (extração, transformação e carga) que busca a cotação do dólar direto na API pública do Banco Central, limpa e organiza os dados, salva tudo num banco PostgreSQL e manda um e mail automático se algum dia tiver uma variação fora do normal.
 
-## Como funciona, no geral
+## Passo a passo do projeto
 
 ```
 API do Banco Central  →  Extração  →  Limpeza/Transformação  →  PostgreSQL  →  Detecção de anomalia  →  E mail de alerta
