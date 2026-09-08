@@ -1,3 +1,4 @@
+
 # Pipeline de Dados Cambiais: Cotação do Dólar
 
 **Stack:** Python, PostgreSQL, SQLAlchemy, Requests, SMTP
@@ -79,6 +80,14 @@ python scripts/detectar_anomalias.py
 ```
 
 Esse script sozinho já faz tudo: busca os dados de 2024, limpa, carrega no banco e manda o e mail se achar alguma anomalia.
+
+## Resultados
+
+Abaixo, um e-mail de alerta real gerado pelo pipeline, listando os dias com variação fora do padrão:
+
+<img width="1132" height="751" alt="Captura de tela 2026-09-07 214358" src="https://github.com/user-attachments/assets/19154a6c-e163-4b0e-86b1-c359f3864a72" />
+
+No total, foram identificados 17 dias com variação anômala no período analisado.
 
 ## O que eu ainda quero melhorar
 
